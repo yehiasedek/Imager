@@ -43,7 +43,7 @@ for line in lines:
     reshaped_line = arabic_reshaper.reshape(line)
     bidi_line = get_display(reshaped_line)
     bbox = draw.textbbox((0, 0), bidi_line, font=font)
-width = bbox[2] - bbox[0]
+width = bbox[2] - bbox[0
     x = (img_width - width) // 2
 
     if "أَتَعْرِفُ" in line:
